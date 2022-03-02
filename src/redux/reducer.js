@@ -303,11 +303,16 @@ const todosReducer =(state = initialState,action)=>{
                             doneList.push(prevDrag[i])
                 }
             }
-            
-            
+           
             const dragDone =action.drag.concat(doneList).sort(
                 (a, b) => {return b.index - a.index;})
-            console.log(dragDone)
+
+            for(let i=0;i<dragDone.length;i++)
+            {
+                projectFirestore.collection("todos").doc(dragDone[i].id).update({
+                    index: dragDone[i].index,
+                })
+            }
             return{
                 ...state,
                 todos:dragDone
