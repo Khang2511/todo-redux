@@ -52,6 +52,7 @@ function TodoEdit() {
             Priority: editPriority,
             Status: editStatus,
             Level: level,
+            index: editInfor.index
         })
         );
         dispatch(

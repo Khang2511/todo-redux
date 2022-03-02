@@ -186,7 +186,8 @@ function handleDone(id,status,prev,deadline){
 }
 
 function handleOnDragEnd(result) {
-  if(sortBy === "index"){
+  console.log(filterBy)
+  if(sortBy === "index" && filterBy==="All"){
     if (!result.destination ) return;
 
       let items 
@@ -207,7 +208,7 @@ function handleOnDragEnd(result) {
     )
   }
   else
-      alert("Please unsort before drag an item");
+      alert("Please unsort and unfilter before drag an item");
   }
     return (
       <div className='todolist'>

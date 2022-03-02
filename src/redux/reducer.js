@@ -27,7 +27,6 @@ const todosReducer =(state = initialState,action)=>{
             const todo = action.payload;
             const todos= state.todos;
             let check = true;
-            console.log(todos)
             for(let i= 0;i<todos.length;i++){
                 if(todo.id === todos[i].id)
                     check = false;
@@ -246,7 +245,6 @@ const todosReducer =(state = initialState,action)=>{
                 filterArray:filterTodo
             };
         }
-
 
         case 'DONE_TODO':
             const doneID = action.payload
