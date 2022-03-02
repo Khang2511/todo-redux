@@ -1,0 +1,123 @@
+.todoheader{
+
+    .header{
+        background-color:  #669999;
+        border-radius: 25px 25px 0px 0px;
+        border: 2px solid #253838;
+        
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 60px;
+            color: #fff;
+        }
+        &__function{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin: auto;
+            width: 80%;
+            justify-content: space-around;
+            
+            .function__show{
+                input{
+                    cursor: pointer;
+                }
+            }
+            .function__add{
+                button{
+                    background-color: #fff;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    &:hover{
+                        opacity: 0.5px;
+                        background-color: #669999;
+                        color: #fff;
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}
+@font-face {
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style : normal;
+    src : url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot");
+    src : url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot") format("embedded-opentype"),
+         url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2") format("woff2"),
+         url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff") format("woff"),
+         url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf") format("truetype"),
+         url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg") format("svg");
+}
+select {
+    font-family: FontAwesome;
+}
+/* Tablet and Mobile */
+@media only screen and (max-width : 1023px){
+
+}
+/* Mobile */
+@media only screen and (max-width : 739px) {
+    .todoheader{
+        padding: 0px;
+        
+            .todolist__tag{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                .tag__name{
+                    text-align: center;
+                }
+                .tag__status{
+                    margin-left: 0%;
+                }
+                .tag__priority{
+                    margin-left: 0%;
+                }
+                .tag__deadline{
+                    margin-left:0%;
+                }
+        
+            }
+        }
+
+}
+
+/* Tablet */
+@media only screen and (min-width : 740px) and (max-width : 1024px) {
+.todoheader{
+    padding: 0px;
+        .list{
+
+            .todolist__tag{
+                width: 65%;
+                .tag__name{
+                    text-align: center;
+                }
+                .tag__status{
+                    margin-left: 0%;
+                }
+                .tag__priority{
+                    margin-left: 0%;
+                }
+                .tag__deadline{
+                    margin-left:0%;
+                }
+        
+            }
+        }
+    }
+}
+
+@media only screen and (min-height : 1200px){
+
+}
+
+
+/* PC */
+@media only screen and (min-width : 1024px) {
+    
+}

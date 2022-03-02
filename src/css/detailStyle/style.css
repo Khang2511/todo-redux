@@ -1,0 +1,147 @@
+.tododetail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.tododetail__form {
+  width: 40%;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 8px  #669999;
+          box-shadow: 0 0 8px  #669999;
+}
+
+.tododetail__form .infor__close {
+  color: #669999;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.tododetail__form .infor__close:hover {
+  color: #a3c2c2;
+}
+
+.tododetail__form .infor h1 {
+  margin: 0;
+  font-size: 34px;
+  text-align: center;
+  line-height: 83px;
+}
+
+.tododetail__form .infor__name input {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+
+.tododetail__form .infor__desc textarea {
+  width: calc(100% - 12px);
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.tododetail__form .infor__deadline input {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+
+.tododetail__form .infor__status-priority {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tododetail__form .infor__status-priority .status input {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+
+.tododetail__form .infor__status-priority .priority input {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: calc(100% - 10px);
+  padding: 5px;
+}
+
+.tododetail__form .infor__btn {
+  margin-top: 10px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tododetail__form .infor__btn button {
+  width: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background: #669999;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tododetail__form .infor__btn button:hover {
+  background: #a3c2c2;
+}
+
+@media only screen and (max-width: 739px) {
+  .tododetail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .tododetail__form {
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 8px  #669999;
+            box-shadow: 0 0 8px  #669999;
+  }
+}
+/*# sourceMappingURL=style.css.map */
