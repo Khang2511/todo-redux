@@ -20,7 +20,7 @@ function TodoDetail() {
         <div className="tododetail__form">
               <form action="/" className='infor'>
                   <i onClick={handleCancel} className="fa fa-window-close infor__close" aria-hidden="true"></i>
-                  <h1>Edit todo</h1>
+                  <h1>Detail todo</h1>
                   <div className="infor__name">
                       <label htmlFor='name'>Name<span>*</span></label>
                       <input id="name" type="text" name="name" required 

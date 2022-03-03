@@ -213,7 +213,47 @@
 }
 /* Tablet and Mobile */
 @media only screen and (max-width : 1023px){
+    .todolist{
+        .tags{
 
+            .todolist__tag{
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        .list{
+            
+            .todolist__list{
+                
+                .status{
+                    .list__item{
+                        .item{
+                            display: inline-block;
+                            margin: 10px;
+
+                            &__status{
+                                display: inline-block;
+                                margin: 10px;
+                            }
+
+                            &__priority{
+                                display:inline-block;
+                                margin: 10px;
+                            }
+                            &__tool{
+                                width: 100%;
+                            }
+                            &__deadline{
+                                margin: 10px;
+                            }
+                        }
+                    } 
+                } 
+                
+            } 
+        } 
+    }
+    
     
 }
 /* Mobile */

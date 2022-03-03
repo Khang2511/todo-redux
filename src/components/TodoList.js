@@ -21,7 +21,8 @@ function TodoList() {
 
   const dispatch = useDispatch();
   const [size,setSize] = useState(window.innerWidth)
-
+  const [sort,setSort] = useState("index")
+  const [direction,setDirection] = useState("desc")
 
   function reportWindowSize() {
          const w = window.innerWidth;
@@ -151,7 +152,9 @@ function handlePriorityClass(priority){
 }
 
 function handleSort(direc,sort){
-  if(direc !== "index")
+  console.log(sort,direc)
+  if(size<=1023){
+    if(direc !== "index" || sort !== "index")
     dispatch(
       sortTodo(
         sort,
@@ -165,6 +168,25 @@ function handleSort(direc,sort){
       "desc"
     )
   )
+  }
+
+  else{
+
+    if(direc !== "index" )
+      dispatch(
+        sortTodo(
+          sort,
+          direc
+        )
+      )
+    else
+    dispatch(
+      sortTodo(
+        "index",
+        "desc"
+      )
+    )
+  }
 }
 
 function handleFilter(filter){
@@ -214,27 +236,30 @@ function handleOnDragEnd(result) {
       <div className='todolist'>
         <div className='tags'>
           {
-            size <= '739' ?
+            size <= '1023' ?
             
             <ul className='todolist__tag'>
               <li className='header__tag'>
                   <p>Filter</p>
                   <select 
                       defaultValue={'All'} 
-                      
-                  >
-                      <option value="All" >All</option>
-                      
-                      <option value="Pending">Pending</option>
-                      <option value="In progress">In progress</option>
-                      <option value="Delayed">Delayed</option>
-                      <option value="Done">Done</option>
-                  </select>
+                      onChange={(e)=>handleFilter(e.target.value)
+                      }
+                      >
+                          <option value="All" >All</option>
+                          <option value="Not started" >Not started</option>
+                          <option value="Pending">Pending</option>
+                          <option value="In progress">In progress</option>
+                          <option value="Delayed">Delayed</option>
+                          <option value="Done">Done</option>
+                      </select>
               </li>
               <li className=' header__tag'>
                   <p>Sort by</p>
                   <select 
-                      defaultValue={'Name'}
+                      defaultValue={'index'}
+                      onChange={(e)=>handleSort(direction,e.target.value)
+                                }
                   >
                       <option value='index'>Unsort</option>
                       <option value="Name" >Name</option>
@@ -242,15 +267,6 @@ function handleOnDragEnd(result) {
                       <option value="Deadline">Deadline</option>
                   </select>
               </li>
-              <li className='header__tag'>
-                  <p>Direction</p>
-                  <select 
-                  defaultValue={'desc'}
-                  >
-                      <option value='desc'> &#xf161;</option>
-                      <option value='asc'> &#xf160;</option>
-                  </select>
-            </li>
           </ul>
             :
             <ul className='todolist__tag'>

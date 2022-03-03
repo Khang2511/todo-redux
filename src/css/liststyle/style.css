@@ -223,6 +223,34 @@
 }
 
 /* Tablet and Mobile */
+@media only screen and (max-width: 1023px) {
+  .todolist .tags .todolist__tag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .todolist .list .todolist__list .status .list__item .item {
+    display: inline-block;
+    margin: 10px;
+  }
+  .todolist .list .todolist__list .status .list__item .item__status {
+    display: inline-block;
+    margin: 10px;
+  }
+  .todolist .list .todolist__list .status .list__item .item__priority {
+    display: inline-block;
+    margin: 10px;
+  }
+  .todolist .list .todolist__list .status .list__item .item__tool {
+    width: 100%;
+  }
+  .todolist .list .todolist__list .status .list__item .item__deadline {
+    margin: 10px;
+  }
+}
+
 /* Mobile */
 /* Tablet */
 /* PC */
