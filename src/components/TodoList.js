@@ -21,8 +21,7 @@ function TodoList() {
 
   const dispatch = useDispatch();
   const [size,setSize] = useState(window.innerWidth)
-  const [sort,setSort] = useState("index")
-  const [direction,setDirection] = useState("desc")
+
 
   function reportWindowSize() {
          const w = window.innerWidth;
@@ -258,7 +257,7 @@ function handleOnDragEnd(result) {
                   <p>Sort by</p>
                   <select 
                       defaultValue={'index'}
-                      onChange={(e)=>handleSort(direction,e.target.value)
+                      onChange={(e)=>handleSort("desc",e.target.value)
                                 }
                   >
                       <option value='index'>Unsort</option>
