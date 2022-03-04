@@ -15,19 +15,20 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  color: #ccc;
 }
 
 .tododetail__form {
-  width: 40%;
+  width: 500px;
   padding: 20px;
   border-radius: 20px;
-  background: #fff;
-  -webkit-box-shadow: 0 0 8px  #669999;
-          box-shadow: 0 0 8px  #669999;
+  background: #374151;
+  -webkit-box-shadow: 0 0 8px  #ccc;
+          box-shadow: 0 0 8px  #ccc;
 }
 
 .tododetail__form .infor__close {
-  color: #669999;
+  color: #6B7280;
   font-size: 30px;
   cursor: pointer;
 }
@@ -79,7 +80,7 @@
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  width: calc(100% - 10px);
+  width: 40%;
   padding: 5px;
 }
 
@@ -87,7 +88,7 @@
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 10px;
-  width: calc(100% - 10px);
+  width: 40%;
   padding: 5px;
 }
 
@@ -106,7 +107,7 @@
   padding: 10px;
   border: none;
   border-radius: 25px;
-  background: #669999;
+  background: #6B7280;
   font-size: 16px;
   color: #fff;
   cursor: pointer;
@@ -117,31 +118,10 @@
 }
 
 @media only screen and (max-width: 739px) {
-  .tododetail {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: relative;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-  }
   .tododetail__form {
     width: 80%;
     padding: 20px;
     border-radius: 20px;
-    background: #fff;
-    -webkit-box-shadow: 0 0 8px  #669999;
-            box-shadow: 0 0 8px  #669999;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from "react-redux"
 import{projectFirestore} from "../firebase/config"
 import { fetchTodo, deleteTodo,showEdit, showDetail, sortTodo, filterTodo, doneTodo, dragTodo } from '../redux/action';
 import '../css/liststyle/style.css'
+// import '../css2/liststyle/style.css'
 import TodoEdit from './TodoEdit';
 import TodoDetail from './TodoDetail';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
@@ -28,12 +29,6 @@ function TodoList() {
         setSize(w)
     }
         window.addEventListener('resize', reportWindowSize);
-
-  //  useEffect(()=>{
-  //         show?setList(incompleted): setList(todos)
-  //       // eslint-disable-next-line react-hooks/exhaustive-deps
-  //       },[show])
-
 
     useEffect(()=>{
       let value= getTodos();

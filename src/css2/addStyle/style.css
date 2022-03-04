@@ -1,0 +1,42 @@
+.todoadd__form .infor__close:hover {
+  color: #a3c2c2;
+}
+
+.todoadd__form .infor__btn button {
+  cursor: pointer;
+}
+
+.todoadd__form .infor__btn button:hover {
+  background: #a3c2c2;
+}
+
+/* Mobile */
+@media only screen and (max-width: 739px) {
+  .todoadd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .todoadd__form {
+    width: 80%;
+    padding: 20px;
+    border-radius: 20px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 8px  #669999;
+            box-shadow: 0 0 8px  #669999;
+  }
+}
+/*# sourceMappingURL=style.css.map */

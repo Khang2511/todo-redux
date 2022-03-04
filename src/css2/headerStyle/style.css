@@ -36,33 +36,10 @@
       justify-content: space-around;
 }
 
-.todoheader .header__function .function__show {
-  border: 1px solid #111827;
-  border-radius: 25px;
-  padding: 10px;
-  background-color: #111827;
-}
-
-.todoheader .header__function .function__show input {
-  cursor: pointer;
-}
-
-.todoheader .header__function .function__show:hover {
-  background-color: var(--dark);
-}
-
 .todoheader .header__function .function__add button {
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  padding: 10px;
-  border-radius: 25px;
-  color: #fff;
-  background-color: #111827;
-}
-
-.todoheader .header__function .function__add button:hover {
-  background-color: var(--dark);
 }
 
 @font-face {

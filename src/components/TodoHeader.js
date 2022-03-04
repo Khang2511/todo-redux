@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/headerStyle/style.css'
+// import '../css2/headerStyle/style.css'
 import {showAdd, showTodo} from '../redux/action'
 import {useDispatch, useSelector} from "react-redux"
 import TodoAdd from './TodoAdd'
@@ -26,7 +27,7 @@ function TodoHeader() {
             <div className='header'>
                 <h1>Todo-List</h1>
                 <ul className='header__function'>
-                    <li className='function__show'>
+                    <li className='function__show' X>
                         <input 
                             type='checkbox' 
                             onChange={handleShow}

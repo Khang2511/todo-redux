@@ -42,5 +42,28 @@ table {
 	border-spacing: 0;
 }
 .App{
-	padding: 20px;
+	padding: 50px;
+	background-color: rgb(90, 86, 86);
+}
+.Todo__app{
+	border: 5px solid #111827;
+	border-radius: 25px;
+	box-shadow: 20px 20px 18px  #888888;
+	background-color: #1F2937;
+	width: 80%;
+	margin: auto;
+}
+@media only screen and (max-width : 1023px){
+	.App{
+		padding: 0px;
+		background-color: rgb(90, 86, 86);
+	}
+	.Todo__app{
+		border: 5px solid #111827;
+		border-radius: 25px;
+		box-shadow: 20px 20px 18px  #888888;
+		background-color: #1F2937;
+		width: 90%;
+		margin: auto;
+	}
 }

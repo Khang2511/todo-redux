@@ -34,14 +34,14 @@
                 appearance: none;
                 outline: 0;
                 box-shadow: none;
-                background: var(--darkest);
+                background: var(--darker);
                 border: 2px solid #253838;
                 border-radius: 25px;
                 padding: 10px;
-                color: var(--light);
+                color: rgb(0, 0, 0);
                 cursor: pointer;
 
-
+                background: #fff;
                 overflow: hidden;
                 text-align: center;
               option{
@@ -222,16 +222,16 @@
                 .status{
                     .list__item{
                         .item{
-                            display: inline;
+                            display: inline-block;
                             margin: 10px;
 
                             &__status{
-                                display: inline;
+                                display: inline-block;
                                 margin: 10px;
                             }
 
                             &__priority{
-                                display:inline;
+                                display:inline-block;
                                 margin: 10px;
                             }
                             &__tool{

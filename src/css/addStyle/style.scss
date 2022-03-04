@@ -10,17 +10,19 @@
     height: 100%;
     background: rgba(0,0,0,0.5);
 
+
     &__form{    
         width: 500px;
         padding: 20px;
         border-radius: 20px;
-        background: #fff;
-        box-shadow: 0 0 8px  #669999; 
+        background: #374151;
+        box-shadow: 0 0 8px  #ccc; 
 
         .infor{
             &__close{
-                color: #669999;
+                color: #6B7280;
                 font-size: 30px;
+                float: left;
                 cursor: pointer;
 
                 &:hover {
@@ -36,7 +38,9 @@
             }
 
             &__name{
-    
+                label{
+                    float: left;
+                }
                 input{
                     margin-bottom: 10px;
                     border: 1px solid #ccc;
@@ -47,7 +51,9 @@
             }
     
             &__desc{
-    
+                label{
+                    float: left;
+                }
                 textarea {
                     width: calc(100% - 12px);
                     padding: 5px;
@@ -110,7 +116,7 @@
                     padding: 10px;
                     border: none;
                     border-radius: 25px; 
-                    background:  #669999;
+                    background:  #6B7280;
                     font-size: 16px;
                     color: #fff;
                     cursor: pointer;
@@ -128,23 +134,11 @@
 /* Mobile */
 @media only screen and (max-width : 739px) {
     .todoadd{
-        display: flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.5);
     
         &__form{    
             width: 80%;
             padding: 20px;
             border-radius: 20px;
-            background: #fff;
-            box-shadow: 0 0 8px  #669999; 
         }
     }
 }

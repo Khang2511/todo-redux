@@ -30,6 +30,7 @@ function TodoEdit() {
     }
 
     function handleEdit(e){
+      console.log(level)
         e.preventDefault();
         let date = editDeadline.slice(0,10)
         date=date.split("-").reverse().join("-");  
@@ -64,6 +65,7 @@ function TodoEdit() {
     }
     function handlePriority(priority){
       setEditPriority(priority)
+      
       switch(priority){
         case "Low":
           setLevel('1')
@@ -84,6 +86,7 @@ function TodoEdit() {
         default:
           return null;
       }
+      console.log(level)
     }
   return (
     <div className='todoedit'>
@@ -127,10 +130,9 @@ function TodoEdit() {
                           <p>Priority</p>
                           <select 
                           defaultValue={editInfor.Priority}
-                          onChange={(e) => {
+                          onChange={(e) => 
                             handlePriority(e.target.value)
-                        setEditPriority(e.target.value)
-                        }}>
+                        }>
                               <option value="DEFAULT" disabled></option>
                               <option value="Low">Low</option>
                                 <option value="Medium">Medium</option>

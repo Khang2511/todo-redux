@@ -137,9 +137,10 @@ const todosReducer =(state = initialState,action)=>{
                 Deadline: edit.Deadline,
                 DefaultDeadline: edit.DefaultDeadline,
                  Name: edit.Name,
-                    Desc: edit.Desc,
+                Desc: edit.Desc,
                 Priority: edit.Priority,
                 Status: edit.Status,
+                Level: edit.Level,
             }
         );
             for( let i = 0; i < editArray.length; i++){ 

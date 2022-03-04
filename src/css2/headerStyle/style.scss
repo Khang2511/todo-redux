@@ -28,28 +28,17 @@
             display: flex;
             justify-content: space-around;
             .function__show{
-                border: 1px solid #111827;
-                border-radius: 25px;
-                padding: 10px;
-                background-color: #111827;
                 input{
-                    cursor: pointer;
-                }
-                &:hover{
-                    background-color: var(--dark);
+
                 }
             }
             .function__add{
                 button{
+
 	                cursor: pointer;
 	                transition: 0.4s;
-                    padding: 10px;
-                    border-radius: 25px;
-                    color: #fff;
-                    background-color: #111827;
-                    
                     &:hover{
-                        background-color: var(--dark);
+
                     }
                 }
             }

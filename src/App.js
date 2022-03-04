@@ -6,9 +6,10 @@ import './App.css'
 function App() {
   return(
     <div className="App">
-
+      <div className="Todo__app">
       <TodoHeader/>
       <TodoList/>
+      </div>
     </div>
   )
 }
