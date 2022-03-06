@@ -27,7 +27,7 @@ function TodoHeader() {
             <div className='header'>
                 <h1>Todo-List</h1>
                 <ul className='header__function'>
-                    <li className='function__show' X>
+                    <li className='function__show'>
                         <input 
                             type='checkbox' 
                             onChange={handleShow}
