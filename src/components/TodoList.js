@@ -167,7 +167,6 @@ function handleFilter(filter){
                       defaultValue={'All'} 
                       onChange={(e)=>handleFilter(e.target.value)}
                       >
-                          <option value="DEFAULT" disabled ></option>
                           <option value="All" >All</option>
                           <option value="Not started" >Not started</option>
                           <option value="Pending">Pending</option>

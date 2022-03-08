@@ -110,7 +110,7 @@ return (
                   <i onClick={handleCancel} className="fa fa-window-close infor__close" aria-hidden="true"></i>
                   <h1>Add todo</h1>
                   <div className="infor__name">
-                      <label htmlFor='name'>Name<span>*</span></label>
+                      <label htmlFor='name'>Name</label>
                       <input id="name" type="text" name="name" required onChange={(e) => {
                         setTodoName(e.target.value)
                         }}/>

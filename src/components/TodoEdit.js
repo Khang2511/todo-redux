@@ -42,26 +42,29 @@ function TodoEdit() {
         }
         else
           deadline = editDeadline
-        
-        dispatch(
-          editTodo({
-            id:editInfor.id,
-            Deadline: deadline,
-            DefaultDeadline: editDefaultDeadline,
-            Name: editName,
-            Desc: editDesc,
-            Priority: editPriority,
-            Status: editStatus,
-            Level: level,
-            index: editInfor.index
-        })
-        );
-        dispatch(
-          showEdit(
-              !state.todos.showEdit
+        if(editName !== ""){
+          dispatch(
+            editTodo({
+              id:editInfor.id,
+              Deadline: deadline,
+              DefaultDeadline: editDefaultDeadline,
+              Name: editName,
+              Desc: editDesc,
+              Priority: editPriority,
+              Status: editStatus,
+              PrevStatus: editStatus,
+              Level: level,
+              index: editInfor.index
+          })
+          );
+          dispatch(
+            showEdit(
+                !state.todos.showEdit
+            )  
           )
-          
-      )
+        }
+        else
+      alert('Name cannot be empty')
     }
     function handlePriority(priority){
       setEditPriority(priority)
@@ -95,7 +98,7 @@ function TodoEdit() {
                   <i onClick={handleCancel} className="fa fa-window-close infor__close" aria-hidden="true"></i>
                   <h1>Edit todo</h1>
                   <div className="infor__name">
-                      <label htmlFor='name'>Name <span>*</span></label>
+                      <label htmlFor='name'>Name </label>
                       <input id="name" type="text" name="name" required 
                             defaultValue={editInfor.Name} onChange={(e) => {
                           setEditName(e.target.value)
