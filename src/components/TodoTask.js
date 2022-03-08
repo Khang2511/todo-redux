@@ -1,19 +1,14 @@
-import React, { useEffect,useState } from 'react'
+import React from 'react'
 import {useDispatch, useSelector} from "react-redux"
-import{projectFirestore} from "../firebase/config"
-import { fetchTodo, deleteTodo,showEdit, showDetail, sortTodo, filterTodo, doneTodo, dragTodo } from '../redux/action';
-// // import '../css/liststyle/style.css'
-// import '../css2/liststyle/style.css'
-import TodoEdit from './TodoEdit';
-import TodoDetail from './TodoDetail';
+
+import {  deleteTodo,showEdit, showDetail, doneTodo, dragTodo } from '../redux/action';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
 function TodoTask({list}) {
     const state = useSelector((state)=>({...state}));
     let todos = state.todos.todos
     let incompleted= todos.filter((task)=>task.Status!=="Done")
     let filterBy = state.todos.filterBy
-    let filter = todos.filter((task)=>
-    task.Status===filterBy)
+
     const sortBy = state.todos.sortBy
     const show = state.todos.show
   
